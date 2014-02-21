@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE8036D018B5FA0500F74599 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8036CF18B5FA0500F74599 /* Foundation.framework */; };
+		DE8036D218B5FA0500F74599 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8036D118B5FA0500F74599 /* CoreGraphics.framework */; };
+		DE8036D418B5FA0500F74599 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8036D318B5FA0500F74599 /* UIKit.framework */; };
+		DE8036DA18B5FA0500F74599 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE8036D818B5FA0500F74599 /* InfoPlist.strings */; };
+		DE8036DC18B5FA0500F74599 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8036DB18B5FA0500F74599 /* main.m */; };
+		DE8036E018B5FA0500F74599 /* TFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8036DF18B5FA0500F74599 /* TFAppDelegate.m */; };
+		DE8036E318B5FA0500F74599 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8036E118B5FA0500F74599 /* Main.storyboard */; };
+		DE8036E618B5FA0500F74599 /* TFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8036E518B5FA0500F74599 /* TFViewController.m */; };
+		DE8036E818B5FA0500F74599 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8036E718B5FA0500F74599 /* Images.xcassets */; };
+		DE80370718B6053E00F74599 /* TFVoiceRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = DE80370618B6053E00F74599 /* TFVoiceRecorder.m */; };
+		DE80370918B6059E00F74599 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE80370818B6059E00F74599 /* AVFoundation.framework */; };
+		DE80371B18B7235400F74599 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE80371818B7235400F74599 /* SVProgressHUD.bundle */; };
+		DE80371C18B7235400F74599 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DE80371A18B7235400F74599 /* SVProgressHUD.m */; };
+		DEDD534718B72DC50099F528 /* TFVoicePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD534618B72DC50099F528 /* TFVoicePlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE8036CC18B5FA0500F74599 /* TFVoiceKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFVoiceKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8036CF18B5FA0500F74599 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DE8036D118B5FA0500F74599 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DE8036D318B5FA0500F74599 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DE8036D718B5FA0500F74599 /* TFVoiceKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TFVoiceKit-Info.plist"; sourceTree = "<group>"; };
+		DE8036D918B5FA0500F74599 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DE8036DB18B5FA0500F74599 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE8036DD18B5FA0500F74599 /* TFVoiceKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TFVoiceKit-Prefix.pch"; sourceTree = "<group>"; };
+		DE8036DE18B5FA0500F74599 /* TFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFAppDelegate.h; sourceTree = "<group>"; };
+		DE8036DF18B5FA0500F74599 /* TFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFAppDelegate.m; sourceTree = "<group>"; };
+		DE8036E218B5FA0500F74599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE8036E418B5FA0500F74599 /* TFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFViewController.h; sourceTree = "<group>"; };
+		DE8036E518B5FA0500F74599 /* TFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFViewController.m; sourceTree = "<group>"; };
+		DE8036E718B5FA0500F74599 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DE8036EE18B5FA0600F74599 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DE8036F618B5FA0600F74599 /* TFVoiceKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TFVoiceKitTests-Info.plist"; sourceTree = "<group>"; };
+		DE8036F818B5FA0600F74599 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DE8036FA18B5FA0600F74599 /* TFVoiceKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFVoiceKitTests.m; sourceTree = "<group>"; };
+		DE80370518B6053E00F74599 /* TFVoiceRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFVoiceRecorder.h; sourceTree = "<group>"; };
+		DE80370618B6053E00F74599 /* TFVoiceRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFVoiceRecorder.m; sourceTree = "<group>"; };
+		DE80370818B6059E00F74599 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DE80371818B7235400F74599 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		DE80371918B7235400F74599 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		DE80371A18B7235400F74599 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		DEDD534518B72DC50099F528 /* TFVoicePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFVoicePlayer.h; sourceTree = "<group>"; };
+		DEDD534618B72DC50099F528 /* TFVoicePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFVoicePlayer.m; sourceTree = "<group>"; };
+		DEDD534818B72F810099F528 /* TFVoiceDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFVoiceDefine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE8036C918B5FA0500F74599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE80370918B6059E00F74599 /* AVFoundation.framework in Frameworks */,
+				DE8036D218B5FA0500F74599 /* CoreGraphics.framework in Frameworks */,
+				DE8036D418B5FA0500F74599 /* UIKit.framework in Frameworks */,
+				DE8036D018B5FA0500F74599 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE8036C318B5FA0500F74599 = {
+			isa = PBXGroup;
+			children = (
+				DE8036D518B5FA0500F74599 /* TFVoiceKit */,
+				DE8036F418B5FA0600F74599 /* TFVoiceKitTests */,
+				DE8036CE18B5FA0500F74599 /* Frameworks */,
+				DE8036CD18B5FA0500F74599 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE8036CD18B5FA0500F74599 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE8036CC18B5FA0500F74599 /* TFVoiceKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE8036CE18B5FA0500F74599 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE80371718B7235400F74599 /* SVProgressHUD */,
+				DE80370818B6059E00F74599 /* AVFoundation.framework */,
+				DE8036CF18B5FA0500F74599 /* Foundation.framework */,
+				DE8036D118B5FA0500F74599 /* CoreGraphics.framework */,
+				DE8036D318B5FA0500F74599 /* UIKit.framework */,
+				DE8036EE18B5FA0600F74599 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE8036D518B5FA0500F74599 /* TFVoiceKit */ = {
+			isa = PBXGroup;
+			children = (
+				DE80370418B6052900F74599 /* TFVoice */,
+				DE8036DE18B5FA0500F74599 /* TFAppDelegate.h */,
+				DE8036DF18B5FA0500F74599 /* TFAppDelegate.m */,
+				DE8036E118B5FA0500F74599 /* Main.storyboard */,
+				DE8036E418B5FA0500F74599 /* TFViewController.h */,
+				DE8036E518B5FA0500F74599 /* TFViewController.m */,
+				DE8036E718B5FA0500F74599 /* Images.xcassets */,
+				DE8036D618B5FA0500F74599 /* Supporting Files */,
+			);
+			path = TFVoiceKit;
+			sourceTree = "<group>";
+		};
+		DE8036D618B5FA0500F74599 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE8036D718B5FA0500F74599 /* TFVoiceKit-Info.plist */,
+				DE8036D818B5FA0500F74599 /* InfoPlist.strings */,
+				DE8036DB18B5FA0500F74599 /* main.m */,
+				DE8036DD18B5FA0500F74599 /* TFVoiceKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE8036F418B5FA0600F74599 /* TFVoiceKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE8036FA18B5FA0600F74599 /* TFVoiceKitTests.m */,
+				DE8036F518B5FA0600F74599 /* Supporting Files */,
+			);
+			path = TFVoiceKitTests;
+			sourceTree = "<group>";
+		};
+		DE8036F518B5FA0600F74599 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE8036F618B5FA0600F74599 /* TFVoiceKitTests-Info.plist */,
+				DE8036F718B5FA0600F74599 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE80370418B6052900F74599 /* TFVoice */ = {
+			isa = PBXGroup;
+			children = (
+				DEDD534818B72F810099F528 /* TFVoiceDefine.h */,
+				DE80370518B6053E00F74599 /* TFVoiceRecorder.h */,
+				DE80370618B6053E00F74599 /* TFVoiceRecorder.m */,
+				DEDD534518B72DC50099F528 /* TFVoicePlayer.h */,
+				DEDD534618B72DC50099F528 /* TFVoicePlayer.m */,
+			);
+			path = TFVoice;
+			sourceTree = "<group>";
+		};
+		DE80371718B7235400F74599 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				DE80371818B7235400F74599 /* SVProgressHUD.bundle */,
+				DE80371918B7235400F74599 /* SVProgressHUD.h */,
+				DE80371A18B7235400F74599 /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			path = Frameworks/SVProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE8036CB18B5FA0500F74599 /* TFVoiceKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE8036FE18B5FA0600F74599 /* Build configuration list for PBXNativeTarget "TFVoiceKit" */;
+			buildPhases = (
+				DE8036C818B5FA0500F74599 /* Sources */,
+				DE8036C918B5FA0500F74599 /* Frameworks */,
+				DE8036CA18B5FA0500F74599 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFVoiceKit;
+			productName = TFVoiceKit;
+			productReference = DE8036CC18B5FA0500F74599 /* TFVoiceKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE8036C418B5FA0500F74599 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TF;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Terry;
+			};
+			buildConfigurationList = DE8036C718B5FA0500F74599 /* Build configuration list for PBXProject "TFVoiceKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE8036C318B5FA0500F74599;
+			productRefGroup = DE8036CD18B5FA0500F74599 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE8036CB18B5FA0500F74599 /* TFVoiceKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE8036CA18B5FA0500F74599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8036E818B5FA0500F74599 /* Images.xcassets in Resources */,
+				DE8036DA18B5FA0500F74599 /* InfoPlist.strings in Resources */,
+				DE8036E318B5FA0500F74599 /* Main.storyboard in Resources */,
+				DE80371B18B7235400F74599 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE8036C818B5FA0500F74599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE80370718B6053E00F74599 /* TFVoiceRecorder.m in Sources */,
+				DE8036E618B5FA0500F74599 /* TFViewController.m in Sources */,
+				DE80371C18B7235400F74599 /* SVProgressHUD.m in Sources */,
+				DEDD534718B72DC50099F528 /* TFVoicePlayer.m in Sources */,
+				DE8036E018B5FA0500F74599 /* TFAppDelegate.m in Sources */,
+				DE8036DC18B5FA0500F74599 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE8036D818B5FA0500F74599 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE8036D918B5FA0500F74599 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DE8036E118B5FA0500F74599 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE8036E218B5FA0500F74599 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE8036F718B5FA0600F74599 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE8036F818B5FA0600F74599 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE8036FC18B5FA0600F74599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE8036FD18B5FA0600F74599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE8036FF18B5FA0600F74599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TFVoiceKit/TFVoiceKit-Prefix.pch";
+				INFOPLIST_FILE = "TFVoiceKit/TFVoiceKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DE80370018B5FA0600F74599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TFVoiceKit/TFVoiceKit-Prefix.pch";
+				INFOPLIST_FILE = "TFVoiceKit/TFVoiceKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE8036C718B5FA0500F74599 /* Build configuration list for PBXProject "TFVoiceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE8036FC18B5FA0600F74599 /* Debug */,
+				DE8036FD18B5FA0600F74599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE8036FE18B5FA0600F74599 /* Build configuration list for PBXNativeTarget "TFVoiceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE8036FF18B5FA0600F74599 /* Debug */,
+				DE80370018B5FA0600F74599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE8036C418B5FA0500F74599 /* Project object */;
+}
